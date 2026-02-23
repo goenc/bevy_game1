@@ -1,11 +1,8 @@
-日時: 2026-02-23 16:29:21 JST
-対象: プロジェクト宣言_bevy_game1.md
-summary: 宣言ファイルの表示名を大神 ミオに変更
+日時(JST): 2026-02-23 16:50:31
+対象:
+summary: 画面中央の表示文言を宇佐田 ペコらに変更
 変更:
-・プロジェクト宣言_bevy_game1.md の先頭行を 大神 ミオ に更新
 code_changes:
-・表示名の1行のみ変更し他行は維持
+・assets/config/center_text.default.json の center_text を宇佐田 ペコらへ変更
 確認:
-・bevy_game1 でデバッグビルド成功
-verification:
-・cargo build が成功
+verification: デバッグビルドの成功を確認
