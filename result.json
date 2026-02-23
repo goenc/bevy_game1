@@ -1,0 +1,26 @@
+{
+  "result_mode": "minimal",
+  "os": "Microsoft Windows 10 Home",
+  "rustc_version": "rustc 1.93.1 (01f6ddf75 2026-02-11)",
+  "cargo_version": "cargo 1.93.1 (083ac5135 2025-12-15)",
+  "timestamp_utc": "2026-02-18T12:30:33Z",
+  "config_policy_validation": "PASS",
+  "executable_path": "C:\\Users\\gonec\\RustProjects\\bevy_game1\\target\\debug\\bevy_game1.exe",
+  "font_policy": {
+    "required_font": "assets/fonts/NotoSansJP-Regular.ttf",
+    "resolved_font_path": "C:\\Users\\gonec\\RustProjects\\bevy_game1\\target\\debug\\assets\\fonts\\NotoSansJP-Regular.ttf",
+    "validation": "PASS"
+  },
+  "extra": {
+    "config_sync": {
+      "source": "assets/config/center_text.default.json",
+      "target_debug": "target/debug/assets/config/center_text.default.json",
+      "target_release": "target/release/assets/config/center_text.default.json",
+      "validation": "PASS"
+    },
+    "config_contract": {
+      "default": "assets/config/*.default.json",
+      "runtime": "%AppData%\\bevy_game1\\*.override.json"
+    }
+  }
+}
