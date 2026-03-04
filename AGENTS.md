@@ -1,0 +1,2 @@
+- 共通方針は `C:\Users\gonec\.codex\AGENTS.md` を参照する
+- skills ディレクトリは `C:\Users\gonec\.codex\skills` を参照する
