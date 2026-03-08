@@ -1,11 +1,11 @@
 use bevy::asset::AssetPlugin;
 use bevy::prelude::*;
-use bevy::window::WindowPlugin;
+use bevy::window::{PresentMode, WindowPlugin};
 use serde::Deserialize;
 use std::path::{Path, PathBuf};
 use std::{fs, io};
 
-const WINDOW_REVEAL_DELAY_FRAMES: u8 = 3;
+const WINDOW_REVEAL_DELAY_FRAMES: u8 = 0;
 const DEFAULT_FONT_RELATIVE_PATH: &str = "fonts/NotoSansJP-Regular.ttf";
 const DEFAULT_TEXT_CONFIG_RELATIVE_PATH: &str = "config/center_text.default.json";
 const OVERRIDE_TEXT_CONFIG_FILE_NAME: &str = "center_text.override.json";
@@ -46,6 +46,7 @@ fn main() {
                 .set(WindowPlugin {
                     primary_window: Some(Window {
                         visible: false,
+                        present_mode: PresentMode::AutoNoVsync,
                         ..default()
                     }),
                     ..default()
