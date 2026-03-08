@@ -147,11 +147,14 @@ fn setup(
             Node {
                 width: Val::Percent(100.0),
                 height: Val::Percent(100.0),
+                padding: UiRect::all(Val::Px(24.0)),
+                border: UiRect::all(Val::Px(3.0)),
                 justify_content: JustifyContent::Center,
                 align_items: AlignItems::Center,
                 ..default()
             },
-            BackgroundColor(Color::srgb(0.08, 0.08, 0.1)),
+            BackgroundColor(Color::NONE),
+            BorderColor::all(Color::srgb(0.7, 0.7, 0.8)),
         ))
         .with_children(|parent| {
             parent.spawn((
@@ -161,7 +164,7 @@ fn setup(
                     font_size: 96.0,
                     ..default()
                 },
-                TextColor(Color::WHITE),
+                TextColor(Color::srgb(0.9, 0.9, 1.0)),
             ));
         });
 }
